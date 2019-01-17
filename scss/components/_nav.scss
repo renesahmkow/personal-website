@@ -1,5 +1,9 @@
-.header {
+.nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.nav__a {
+  margin-right: px;
 }
