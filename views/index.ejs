@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>René</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
 
-  <body class="grid">
-    <%- include('components/header') %> <%- include('components/skills') %> <%-
-    include('components/home') %> <%- include('components/contact') %> <%-
-    include('components/footer') %>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>René Sahmkow</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="grid">
+    <%- include('components/header') %>
+ <main class="grid-2 scroll">
+    <%- include('components/home') %>
+    <%- include('components/profile') %>
+    <%- include('components/lebenslauf') %>
+  </main>
+  <%- include('components/nav') %>
+  <script src="/js/main.js"></script>
+</body>
+
 </html>

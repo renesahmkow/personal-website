@@ -6,6 +6,20 @@ var logger = require('morgan')
 var sassMiddleware = require('node-sass-middleware')
 
 var app = express()
+if (app.get('env') == 'development') {
+  var browserSync = require('browser-sync')
+  var config = {
+    files: ['public/**/*.{css,js}', 'scss/**/*.scss', 'views/**/*.ejs'],
+    logLevel: 'debug',
+    logSnippet: false,
+    notify: false,
+    ui: false,
+    reloadDelay: 100,
+    reloadOnRestart: true,
+  }
+  var bs = browserSync(config)
+  app.use(require('connect-browser-sync')(bs))
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -15,6 +29,7 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+
 app.use(
   '/stylesheets',
   sassMiddleware({

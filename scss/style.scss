@@ -1,10 +1,12 @@
-@import "colors";
-@import "utils"; // functional helper classes e.g. self-written .mb-3
-@import "base"; // global element styles e.g. h1
+@import 'colors';
+@import 'utils'; // functional helpers
+@import 'base'; // global styles
 
-// components:
-@import "components/grid"; // main grid
-@import "components/header"; // main header
-@import "components/footer"; // main header
-@import "components/nav";
-@import "components/skills";
+// **********
+// components
+// **********
+@import 'components/grid'; // main grid
+@import 'components/timeline';
+@import 'components/home';
+@import 'components/profile';
+// ... add more here

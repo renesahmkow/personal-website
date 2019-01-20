@@ -9,3 +9,30 @@
 .p-20 {
   padding: 20px;
 }
+
+.scroll {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; // smooth scrolling on mobile
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+
+
+.shadow-1 {
+  text-shadow: -150px -30px rgba(105, 168, 187, 0.5);
+}
+
+.shadow-2 {
+  text-shadow: 50px 100px rgba(104, 168, 187, 0.5);
+}

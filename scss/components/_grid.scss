@@ -1,43 +1,22 @@
 .grid {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 48px auto auto auto 48px; // header, scroll-area, footer
+  grid-template-rows: 48 auto 48; 
+  grid-gap: 10px;
+  // header, scroll-area, footer
+  // 100vh is buggy on mobile browsers,
+  // so position fixed and following lines are needed
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.grid__scroll-area {
-  overflow-y: scroll;
-}
-
-.grid-skills {
+.grid-2 {
   display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-}
-
-.icon-top-left {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.icon-top-right {
-  grid-row-start: 1;
-  grid-row-end: span 1;
-  grid-column-start: 2;
-  grid-column-end: span 1;
-}
-
-.icon-bot-left {
-  grid-row-start: 2;
-  grid-row-end: span 1;
-  grid-column-start: 1;
-  grid-column-end: span 1;
-}
-
-.icon-bot-right {
-  grid-row-start: 2;
-  grid-row-end: span 1;
-  grid-column-start: 2;
-  grid-column-end: span 1;
+  grid-template-rows: auto auto auto; 
+  grid-gap: 10px;
+  // header, scroll-area, footer
+  // 100vh is buggy on mobile browsers,
+  // so position fixed and following lines are needed
 }
