@@ -1,20 +1,9 @@
 .grid {
   display: grid;
-  grid-template-rows: 48 auto 48; 
-  grid-gap: 10px;
+  grid-template-rows: 48px auto auto auto auto 48px; 
+  grid-gap: 5px;
+  background: grey;
   // header, scroll-area, footer
   // 100vh is buggy on mobile browsers,
   // so position fixed and following lines are needed
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-rows: auto auto auto auto auto; 
-  grid-gap: 10px;
-  width: 100%;
 }
