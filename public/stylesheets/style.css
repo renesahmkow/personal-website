@@ -1,5 +1,5 @@
 .bg-dark {
-  background: #333; }
+  background: #1C3144; }
 
 .text-light {
   color: #efefef; }
@@ -47,8 +47,9 @@ body {
 
 .grid-2 {
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px; }
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 10px;
+  width: 100%; }
 
 /* Set a background color */
 body {
@@ -126,5 +127,32 @@ body {
   padding: 6px 8px;
   border-radius: 10px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px; }
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #A39A92;
+  padding: 10px;
+  text-decoration: none;
+  color: #efefef; }
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #A39A92;
+  padding: 10px;
+  color: #efefef; }
 
 /*# sourceMappingURL=style.css.map */
