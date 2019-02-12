@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "run-p server webpack",
-    "server": "nodemon -w views ./bin/www",
+    "server": "node ./bin/www",
     "webpack": "webpack"
   },
   "dependencies": {
@@ -14,9 +14,7 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
-  },
-  "devDependencies": {
+    "morgan": "~1.9.0",
     "@babel/core": "7.2.2",
     "@babel/plugin-proposal-class-properties": "7.2.3",
     "@babel/plugin-proposal-export-default-from": "7.2.0",

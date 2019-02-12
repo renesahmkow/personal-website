@@ -1,9 +1,6 @@
 .grid {
   display: grid;
-  grid-template-rows: 48px auto auto auto auto 48px; 
-  grid-gap: 5px;
+  grid-template-colums: 1fr 1fr; 
+  grid-gap: 10px;
   background: grey;
-  // header, scroll-area, footer
-  // 100vh is buggy on mobile browsers,
-  // so position fixed and following lines are needed
 }

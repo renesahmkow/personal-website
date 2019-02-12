@@ -1,4 +1,8 @@
 .home {
+    height: 100vh;
+}
+
+.home__intro > p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -6,10 +10,20 @@
     text-transform: uppercase;
 }
 
-.home-1 {
-    display: flex;
+.home__text {
+    display: flex; 
     justify-content: flex-end;
-    align-items: center;
-    font-size: 40px; 
-    text-transform: uppercase;
+    align-items: flex-end;
+    
 }
+
+
+.shadow__1 {
+    text-shadow: -150px -30px rgba(105, 168, 187, 0.5);
+  } 
+  
+.shadow__2 {
+    text-shadow: 50px 100px rgba(104, 168, 187, 0.5);
+  }
+
+  
