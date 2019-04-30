@@ -1,16 +1,30 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  color: $dark;
-  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  background: #012c64;
+  color: #fefefe;
 }
 
+a {
+  text-decoration: none;
+}
+
+p  {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 400px;
 }
